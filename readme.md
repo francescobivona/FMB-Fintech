@@ -1,1 +1,1 @@
-Entrare su=Idea del Progetto->File .txt->e leggere:idea.txt
+Repository creato per gestire al meglio il progetto.
