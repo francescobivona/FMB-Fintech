@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Cambiato da #f4f4f4 a bianco */
+    color: #000; /* Cambiato da #333 a nero */
+    transition: background-color 0.5s, color 0.5s;
+  }
+  header {
+    background-color: #000; /* Header nero */
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 1.8em;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .hero {
+    padding: 60px 40px;
+    background-color: #fff; /* Sfondo bianco per la sezione hero */
+    text-align: center;
+  }
+  .hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #000; /* Testo nero */
+  }
+  .hero p {
+    font-size: 1.2em;
+    color: #333; /* Testo grigio scuro */
+  }
+  .features {
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    background-color: #f9f9f9; /* Sfondo grigio chiaro per la sezione delle funzionalità */
+  }
+  .feature {
+    width: 30%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    text-align: center;
+  }
+  .feature h3 {
+    color: #000; /* Titoli delle funzionalità neri */
+  }
+  footer {
+    background-color: #000; /* Footer nero */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9em;
+  }
+  /* Modal Login */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+  }
+  .modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  .modal-content input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    font-size: 1em;
+  }
+  .modal-content button {
+    width: 100%;
+    background-color: #000; /* Bottone di login nero */
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  .close {
+    float: right;
+    font-size: 1.2em;
+    cursor: pointer;
+  }

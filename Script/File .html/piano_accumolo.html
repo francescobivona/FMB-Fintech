@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FMB-Fintech | Piano d'Accumulo</title>
+  <link rel="stylesheet" href="style_pianoAccumolo.css">
+  <link rel="icon" href="Logo.ico" type="image/x-icon">
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>FMB-Fintech | Piano d'Accumulo</h1>
+  </header>
+
+  <div class="container">
+    <div class="form-container">
+      <h2>Calcola il tuo Piano d'Accumulo</h2>
+      <label for="monthlyDeposit">Importo Mensile (€):</label>
+      <input type="number" id="monthlyDeposit" placeholder="Inserisci l'importo mensile" />
+
+      <label for="duration">Durata (mesi):</label>
+      <input type="number" id="duration" placeholder="Inserisci la durata in mesi" />
+
+      <label for="interestRate">Tasso d'Interesse Annuo (%):</label>
+      <input type="number" id="interestRate" placeholder="Inserisci il tasso d'interesse annuo" />
+
+      <button onclick="calculateAccumulation()">Calcola Piano</button>
+    </div>
+
+    <div class="result" id="resultContainer" style="display: none;">
+      <h2>Risultato del Piano d'Accumulo</h2>
+      <p><strong>Importo Mensile: </strong><span id="resultMonthlyDeposit"></span> €</p>
+      <p><strong>Durata: </strong><span id="resultDuration"></span> mesi</p>
+      <p><strong>Tasso d'Interesse Annuo: </strong><span id="resultInterestRate"></span> %</p>
+      <p><strong>Totale Accumulato al Termine del Piano: </strong><span id="resultTotalAccumulated"></span> €</p>
+      <p><strong>Interesse Totale: </strong><span id="resultTotalInterest"></span> €</p>
+    </div>
+
+    <!-- Canvas per il grafico -->
+    <div class="result" id="chartContainer" style="display: none;">
+      <h2>Grafico dell'Accumulato</h2>
+      <canvas id="accumulationChart"></canvas>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 FMB-Fintech. Tutti i diritti riservati.
+  </footer>
+
+  <script type="text/javascript" src="script_pianoAccumolo.js"></script>
+
+</body>
+</html>
