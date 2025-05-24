@@ -5,16 +5,34 @@ body {
       background-color: #ffffff; /* Sfondo bianco */
       color: #333333; /* Testo grigio scuro */
     }
+	#logo-container {
+	  display: flex;
+	  align-items: center;
+	}
+	#logo {
+	  height: 40px; /* Altezza proporzionata alla nav bar */
+	  margin-right: 15px;
+	  cursor: pointer;
+	}
     header {
-      background-color: #000000; /* Sfondo nero */
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2em;
-    }
+    background-color: #000; /* Header nero */
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 1.8em;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
     .container {
       max-width: 1200px;
       margin: 30px auto;

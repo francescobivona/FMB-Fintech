@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FMB-Fintech | Gestione Conto</title>
+  <link rel="icon" href="Logo.ico" type="image/x-icon">	
+  <link rel="stylesheet" href="style_gestioneConto.css">
+</head>
+<body>
+
+  <header>
+    <div id="logo-container">
+		<a href="home.html"><img src="Logo.png" alt="Logo FMB-Fintech" id="logo"></a>
+		<h1>FMB-Fintech | Gestione Conto</h1>
+	</div>
+	<nav>
+		<a href="home.html">Home</a>
+		<a id="loginBtn">Accedi</a>
+		<a href="#pie">Contatti</a>
+	</nav>
+  </header>
+
+  <div class="container">
+    <h2>Il tuo conto</h2>
+    <div class="saldo" id="saldoDisplay">Saldo: €0.00</div>
+
+    <input type="number" id="importo" placeholder="Inserisci importo" />
+    <button onclick="deposita()">Deposita</button>
+    <button onclick="preleva()">Preleva</button>
+  </div>
+
+  <footer id="pie">
+    &copy; 2025 FMB-Fintech. Tutti i diritti riservati.
+  </footer>
+
+  <script type="text/javascript" src="script_gestioneConto.js"></script>
+
+</body>
+</html>

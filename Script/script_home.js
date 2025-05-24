@@ -10,7 +10,7 @@
       welcomeTitle.textContent = "Buonasera da FMB-Fintech!";
     }
 
-    // Modale login
+    // Modal login
     let loginBtn = document.getElementById("loginBtn");
     const modal = document.getElementById("loginModal");
     const closeModal = document.getElementById("closeModal");
@@ -33,6 +33,10 @@
     function login() {
       const user = document.getElementById("username").value;
       alert("Benvenuto, " + user + "! (Simulazione accesso)");
-      modal.style.display = "none";
+      modal.style.display = "none";//nasconde la modal e non la rende visibile
 	  loginBtn.innerHTML=user;
+	  const recLink = document.getElementById("mioLink");
+	  recLink.remove();
+	  const pianoElement = document.getElementById("piano");
+	  pianoElement.innerHTML = "Piano Accumolo";
     }

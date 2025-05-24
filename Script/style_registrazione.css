@@ -1,0 +1,79 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff; /* Cambiato da #f4f4f4 a bianco */
+    color: #000; /* Cambiato da #333 a nero */
+    transition: background-color 0.5s, color 0.5s;
+  }
+  #logo-container {
+  display: flex;
+  align-items: center;
+}
+
+	#logo {
+	  height: 40px; /* Altezza proporzionata alla nav bar */
+	  margin-right: 15px;
+	  cursor: pointer;
+	}
+  header {
+    background-color: #000; /* Header nero */
+    color: white;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header h1 {
+    margin: 0;
+    font-size: 1.8em;
+  }
+  nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+        .container {
+            max-width: 500px;
+            margin: 50px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+        }
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #000;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #5F5F5F;
+        }
+        .message {
+            text-align: center;
+            color: green;
+            margin-top: 20px;
+        }
+		  footer {
+			background-color: #000; /* Footer nero */
+			color: white;
+			text-align: center;
+			padding: 20px;
+			font-size: 0.9em;
+		  }
